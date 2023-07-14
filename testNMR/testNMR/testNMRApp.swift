@@ -76,8 +76,10 @@ class ViewControl: ObservableObject {
     @Published var viewName = ViewNames.parameters
     @Published var viewRefreshFlag: Bool = false
     @Published var viewResult = ViewResults.raw
+    @Published var viewMenu: Bool = false
     
     @Published var frequency : String = "\(gData.frequency)"
+    @Published var disableFrequency: Bool = false
 
     func viewRefresh() -> Void {
         viewRefreshFlag = !viewRefreshFlag

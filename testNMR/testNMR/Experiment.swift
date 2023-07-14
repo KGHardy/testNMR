@@ -229,6 +229,7 @@ func doFIDAnalysis() -> Bool {
         fitsReturned[runData.experiment] = [dataReturn.7, dataReturn.8, dataReturn.9]
         frequencyMeasured[runData.experiment] = dataReturn.7
     }
+    
     if frequencyScan.count > 1 {
         xPsd = (0..<frequencyScan.count).map {frequencyScan[$0] - 16000000}
         yPsd = (0..<frequencyMeasured.count).map {frequencyMeasured[$0] }
@@ -261,6 +262,7 @@ func clearFIDAnalysis() -> Bool {
 func showFit() -> Void {
     viewControl.viewResult = runData.experiment > 1 ? .fit : .raw
     viewControl.frequency = "\(gData.frequency)"
+    viewControl.disableFrequency = true
 }
 
 func doExperiment(noOfRuns: Int = 1, noOfScans: Int, noOfExperiments: Int) -> Void {

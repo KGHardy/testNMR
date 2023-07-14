@@ -14,8 +14,8 @@
             filePath = "testNMR/Experiment.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "237"
-            endingLineNumber = "237"
+            startingLineNumber = "238"
+            endingLineNumber = "238"
             landmarkName = "doFIDAnalysis()"
             landmarkType = "9">
          </BreakpointContent>
@@ -109,8 +109,8 @@
             filePath = "testNMR/Experiment.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "239"
-            endingLineNumber = "239"
+            startingLineNumber = "240"
+            endingLineNumber = "240"
             landmarkName = "doFIDAnalysis()"
             landmarkType = "9">
             <Locations>
@@ -157,8 +157,8 @@
             filePath = "testNMR/Experiment.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "245"
-            endingLineNumber = "245"
+            startingLineNumber = "246"
+            endingLineNumber = "246"
             landmarkName = "doFIDAnalysis()"
             landmarkType = "9">
          </BreakpointContent>

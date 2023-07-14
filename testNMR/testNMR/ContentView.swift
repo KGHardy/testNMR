@@ -129,11 +129,15 @@ struct ContentView: View {
                             }
                         }
                     }
+                    if vC.viewMenu {
+                        MenuView(size: reader.size)
+                    }
                 }
                 .navigationBarTitle("nmrClient App", displayMode: .inline)
                 .toolbar {
                     ToolbarItem(placement: .navigationBarLeading) {
-                        Button(action: {print("Menu selected")
+                        Button(action: {
+                            vC.viewMenu.toggle()
                                },
                                label: {Image(systemName: "line.3.horizontal")
                                }
@@ -163,6 +167,25 @@ struct ContentView: View {
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())
+    }
+}
+
+struct MenuView: View {
+    @EnvironmentObject var vC: ViewControl
+    var size: CGSize
+    
+    var body: some View {
+        VStack(alignment: .leading) {
+            HStack {
+                Toggle("Disable Frequency Entry", isOn: $vC.disableFrequency)
+                    .padding(.leading, 10)
+                Spacer()
+            }
+            Spacer()
+        }
+        .frame(width: size.width / 2, height: size.height / 2)
+        .background(Color(red: 218/255, green: 218/255, blue: 218/255))
+        .position(CGPoint(x: size.width / 4, y: size.height / 4))
     }
 }
 

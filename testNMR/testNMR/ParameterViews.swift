@@ -353,6 +353,7 @@ struct FrequencyView: View {
     var body: some View {
         IntegerParameter(prompt: "\(allSettings.paramMap.prompts[2])", index: 2, value: $vC.frequency, minimum: 0, maximum: 0)
             .frame(height: vH.slider)
+            .disabled(vC.disableFrequency)
     }
 }
 
